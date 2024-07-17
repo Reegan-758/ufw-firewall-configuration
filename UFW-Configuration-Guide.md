@@ -71,7 +71,7 @@ Allow connections from specific IP addresses (e.g., for trusted IPs).
 
 ```bash
 
-sudo ufw allow from 192.168.1.100
+sudo ufw allow from 192.168.1.100 
 
 ```
 ### 9. Enable Logging
@@ -107,6 +107,10 @@ sudo ufw status verbose
 
 #### Test the firewall rules to ensure they are working as expected. You can use tools like nc (netcat) to test the allowed and blocked connections.
 
+### Using Netcat
+
+- Netcat (nc) is a versatile networking tool used for testing and debugging. You can test allowed and blocked connections with it.
+
 __To test allowed connections (e.g., SSH):__
 
 ```bash
@@ -122,3 +126,22 @@ __To test blocked connections (e.g., a port not allowed):__
 nc -zv <your-server-ip> <blocked-port>
 
 ```
+### Using Nmap
+
+#### Nmap is a powerful network scanning tool. Install it using:
+
+```bash
+
+sudo apt install nmap
+
+```
+Scan for open ports to test the firewall rules:
+
+```bash
+
+nmap -v -A <your-server-ip> 
+
+```
+
+
+
