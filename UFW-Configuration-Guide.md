@@ -27,6 +27,7 @@ Before making any changes, check the current status of UFW.
 sudo ufw status
 
 ```
+
 ### 4.Enable UFW 
 
 Enable UFW to Start enforcing the rules
@@ -100,5 +101,24 @@ Verify the status and list of active rules.
 ```bash
 
 sudo ufw status verbose
+
+```
+### 12. Test Firewall Rules
+
+#### Test the firewall rules to ensure they are working as expected. You can use tools like nc (netcat) to test the allowed and blocked connections.
+
+__To test allowed connections (e.g., SSH):__
+
+```bash
+
+nc -zv <your-server-ip> 22
+
+```
+
+__To test blocked connections (e.g., a port not allowed):__
+
+```bash
+
+nc -zv <your-server-ip> <blocked-port>
 
 ```
