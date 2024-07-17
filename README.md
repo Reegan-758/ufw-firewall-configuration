@@ -10,6 +10,8 @@ This repository contains a guide and script to configure a firewall using Uncomp
 
 # UFW Firewall Configuration on Ubuntu
 
+![img](https://github.com/reegan055/ufw-firewall-configuration/blob/01c7fcb56211aa4dad2b53e11418bc0182cfceb1/img.jpg)
+
 ## Introduction
 
 This project provides a guide and script to configure a firewall using Uncomplicated Firewall (UFW) on Ubuntu. The goal is to enhance system security by managing incoming and outgoing traffic effectively.
