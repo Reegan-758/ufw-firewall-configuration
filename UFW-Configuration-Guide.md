@@ -103,7 +103,55 @@ Verify the status and list of active rules.
 sudo ufw status verbose
 
 ```
-### 12. Test Firewall Rules
+### 12. Delete UFW Rules
+
+To delete a specific rule, use the delete command followed by the rule number or rule details.
+
+```bash
+
+sudo ufw delete allow http
+```
+To delete a rule by its number, first list the numbered rules:
+
+```bash
+
+sudo ufw status numbered
+```
+Then delete the rule by specifying its number, for example:
+
+```bash
+
+sudo ufw delete 2
+```
+### 13. List UFW Applications
+
+UFW can manage applications profiles. List all available application profiles using:
+
+```bash
+
+sudo ufw app list
+```
+To get detailed information about a specific application profile:
+
+```bash
+
+sudo ufw app info <application-name>
+```
+### 14. Allow Specific Application
+
+To allow traffic for a specific application, use the application profile name:
+
+```bash
+
+sudo ufw allow <application-name>
+```
+For example, to allow OpenSSH:
+
+```bash
+
+sudo ufw allow OpenSSH
+```
+### 15. Test Firewall Rules
 
 #### Test the firewall rules to ensure they are working as expected. You can use tools like nc (netcat) to test the allowed and blocked connections.
 
