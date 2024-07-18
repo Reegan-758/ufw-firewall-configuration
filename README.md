@@ -24,15 +24,20 @@ This project provides a guide and script to configure a firewall using Uncomplic
 
 ## Notes
 
-**Testing Rules: After setting up, test the firewall rules to ensure they are working as expected without disrupting essential services.**
++ **Testing Rules: After setting up, test the firewall rules to ensure they are working as expected without disrupting essential services.**
 
-**Backup Configuration: Regularly backup your UFW configuration using**
- ```bash
- sudo ufw status > backups/ufw_rules_backup.txt
+- **Backup Configuration: Regularly backup your UFW configuration using**
 
-```
-**Review Logs: Regularly review UFW logs stored in ``` /var/log/ufw.log ``` to monitor suspicious activity.**
+  ```bash
+  sudo ufw status > backups/ufw_rules_backup.txt
+  ```
++ **Review Logs: Regularly review UFW logs stored in ``` /var/log/ufw.log ``` to monitor suspicious activity.**
 
+- **Disable UFW: If you need to disable UFW for troubleshooting, use:**
+
+  ```bash
+  sudo ufw disable
+  ```
 ## Conclusion
 Configuring UFW on Ubuntu enhances system security by effectively controlling incoming and outgoing traffic. Proper setup, regular monitoring, and timely updates are essential to maintain a secure environment. This project provides a solid foundation in firewall management on Linux, enabling you to protect your system from unauthorized access and potential threats. By understanding and applying these principles, you can ensure a robust and resilient security posture.
 
