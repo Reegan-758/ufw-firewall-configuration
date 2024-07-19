@@ -41,6 +41,10 @@ This project provides a guide and script to configure a firewall using Uncomplic
 ## Conclusion
 Configuring UFW on Ubuntu enhances system security by effectively controlling incoming and outgoing traffic. Proper setup, regular monitoring, and timely updates are essential to maintain a secure environment. This project provides a solid foundation in firewall management on Linux, enabling you to protect your system from unauthorized access and potential threats. By understanding and applying these principles, you can ensure a robust and resilient security posture.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
 ## References
 
 - [UFW Documentation](https://help.ubuntu.com/community/UFW)
